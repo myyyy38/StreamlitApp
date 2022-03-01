@@ -1,6 +1,8 @@
 #from curses import use_default_colors
 import streamlit as st
 import time
+import pandas as pd
+import numpy as np
 
 st.title('streamlit超入門')
 
@@ -28,8 +30,6 @@ df_map = pd.DataFrame(
     columns=['lat','lon']
 )
 st.map(df_map)
-
-img = Image.open('hanabi.png')
 
 # if st.checkbox('Show Image'):
 #     st.image(img,caption='hanabi',use_column_width=True)
